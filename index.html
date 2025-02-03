@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulises Salinas - Portfolio</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            border: 1px solid black;
+        }
+        main {
+            border: 1px solid black;
+        }
+        footer {
+            border: 1px solid black;
+        }
+        styled-box {
+          display: block;
+          padding: 10px;
+          border: 1px solid black;
+          background-color: lightgray;
+          margin: 10px 0;
+        }
+        
+    </style>
+    <script>
+      console.log("script placeholder");
+      class HelloWorld extends HTMLElement {
+        constructor() {
+            super();
+            console.log("Hello world!");
+        }
+    }
+    customElements.define("hello-world", HelloWorld);
+  </script>
+</head>
+<body>
+  <noscript>
+    <p><strong> js  is disabled</strong> Some features of this site may not work properly. Please enable JavaScript for the best experience.</p>
+</noscript>
+    <header>
+        <hgroup>
+            <h1>Ulises Salinas</h1>
+            <p>Short description about myself</p>
+        </hgroup>
+    </header>
+    
+    <main>
+      <styled-box>
+          <section id="about-me">
+              <h2>About Me</h2>
+              <section id="bio">
+                  <h3>BIO/GOALS</h3>
+                  <p><strong>Personal</strong> <em>description</em></p>
+              </section>
+              <nav>
+                  <ul>
+                      <li><a href="#education">Education</a></li>
+                      <li><a href="#resume">Resume</a></li>
+                  </ul>
+              </nav>
+              <aside>
+                  <figure>
+                      <img src="assets/images/profilepic.jpg" alt="Image of Ulises">
+                      <figcaption>Image of Me</figcaption>
+                  </figure>
+              </aside>
+          </section>
+        </main>
+      </styled-box>
+
+        <styled-box>
+          <section id="education">
+              <h2>Education</h2>
+              <p>List education</p>
+          </section>
+        </styled-box>
+
+        <styled-box>
+          <section id="resume">
+              <h2>Resume</h2>
+              <iframe src="assets/pdf/resume.pdf"></iframe>
+          </section>
+        </styled-box>
+
+
+        <section id="portfolio">
+            <h2>Portfolio/Projects</h2>
+            <article>
+                <h3>Project Title</h3>
+                <p>Short description of project/journey</p>
+                <blockquote>
+                    <p>Project-related quote or insight.</p>
+                    <cite>Source</cite>
+                </blockquote>
+                <figure>
+                    <img src="assets/images/logo.jpg" alt="Image of Project outcome/result">
+                    <figcaption>Project outcome/result</figcaption>
+                </figure>
+            </article>
+        </section>
+        
+        <section id="experiments">
+            <h2>Experiments</h2>
+            <template>
+              <p>Placeholder content</p>
+            </template>
+            <canvas id="myCanvas" width="200" height="100"></canvas>
+            <script>
+                const canvas = document.getElementById("myCanvas");
+                const ctx = canvas.getContext("2d");
+                ctx.fillStyle = "blue";
+                ctx.fillRect(20, 20, 100, 50);
+            </script>
+            <p>Example of inline SVG:</p>
+            <svg width="109" height="200">
+                <circle cx="32" cy="40" r="15" stroke="black" stroke-width="3" fill="blue" />
+            </svg>
+            <audio controls>
+                <source src="assets/audios/music.mp3" type="audio/mpeg">
+                your browser does not support the audio element
+            </audio>
+            <video controls>
+                <source src="assets/videos/park.mp4" type="video/mp4">
+                your browser does not support the video tag
+            </video>
+            <table>
+                <caption>Sample Table</caption>
+                <colgroup>
+                    <col span="1" style="background-color:lightgray">
+                </colgroup>
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                </tr>
+                <tr>
+                    <td>Data 1</td>
+                    <td>Data 2</td>
+                </tr>
+            </table>
+            <form>
+                <fieldset>
+                    <legend>Sample Form</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <datalist id="suggestions">
+                        <option value="Option 1">
+                        <option value="Option 2">
+                    </datalist>
+                    <select>
+                        <optgroup label="Group 1">
+                            <option>Choice 1</option>
+                        </optgroup>
+                    </select>
+                    <textarea></textarea>
+                    <button>Submit</button>
+                </fieldset>
+            </form>
+            <details>
+                <summary>More Information</summary>
+                <p>Hidden details</p>
+            </details>
+            <dialog open>This is a dialog box.</dialog>
+            <blockquote>
+                <p>Quote</p>
+                <cite>Source</cite>
+            </blockquote>
+            <pre><code>console.log("Code example");</code></pre>
+            <hr>
+            <abbr title="Hypertext Markup Language">HTML</abbr>
+            <dfn>Definition term</dfn>
+            <kbd>Ctrl + C</kbd>
+            <ins>Inserted text</ins>
+            <del>Deleted text</del>
+        </section>
+        <section id="more experiements">
+          <h2>Experiements Continued</h2>
+          <div>
+              <span> span inside a div</span>
+              <br>
+              <b>bold</b>
+              <i>italic</i>
+              <picture>
+                  <source srcset="https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dpink%2Bheart&psig=AOvVaw0wyiMKQffXykUIA-IS0ypL&ust=1738642987563000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMCU8__TposDFQAAAAAdAAAAABAX" type="image/webp">
+                  <img src="assets/images/scenic.png" alt="scenic picture">
+              </picture>
+              <search>
+                  <input type="search" placeholder="search">
+              </search>
+              <dl>
+                  <dt>def term</dt>
+                  <dd>def descr.</dd>
+              </dl>
+          </div>
+          <hello-world></hello-world>
+      </section>
+    </main>
+    
+    <footer>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <address>
+                <a href="#">LinkedIn</a> | <a href="#">Email</a> | <a href="#">GitHub</a>
+            </address>
+        </section>
+        <p>&copy; 2024 Ulises's Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
