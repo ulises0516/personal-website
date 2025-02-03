@@ -5,27 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ulises Salinas - Portfolio</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <meta name="description" content="Ulises Salinas personal website showcasing projects, resume and contact"
+    <meta name="keywords" content="Ulises Salinas, Resume, Projects"
+    <meta name="author" content="Ulises Salinas">
+    <meta property="og:title" content="Ulises Salinas personal website"
+    <meta property="og:description" content="look at resume, projects, and contact information of Ulises Salinas.">
+    <meta property="og:url" content="https://ulisessalinas.netlify.app/">
+
+
+
     <style>
-        body {
-            border: 1px solid black;
-        }
-        main {
-            border: 1px solid black;
-        }
-        footer {
-            border: 1px solid black;
-        }
-        styled-box {
-          display: block;
-          padding: 10px;
+      body {
           border: 1px solid black;
-          background-color: lightgray;
-          margin: 10px 0;
-        }
-        
-    </style>
+      }
+      main {
+          border: 1px solid black;
+      }
+      footer {
+          border: 1px solid black;
+      }
+      styled-box {
+        display: block;
+        padding: 10px;
+        border: 1px solid black;
+        background-color: lightgray;
+        margin: 10px 0;
+      }
+      
+  </style>
     <script>
-      console.log("script placeholder");
+      console.log("script placeholderr");
       class HelloWorld extends HTMLElement {
         constructor() {
             super();
@@ -35,9 +45,7 @@
     customElements.define("hello-world", HelloWorld);
   </script>
 </head>
-<search>
-  <input type="search" placeholder="search">
-</search>
+
 <body>
   <noscript>
     <p><strong> js  is disabled</strong> Some features of this site may not work properly. Please enable JavaScript for the best experience.</p>
@@ -45,7 +53,7 @@
     <header>
         <hgroup>
             <h1>Ulises Salinas</h1>
-            <p>Short description about myself</p>
+            <p>Hi! I am a inspiring Software developer hoping to make great contributions!</p>
         </hgroup>
     </header>
     
@@ -55,7 +63,11 @@
               <h2>About Me</h2>
               <section id="bio">
                   <h3>BIO/GOALS</h3>
+                  <p> My current goals are to become a better programmer and reach 1000 leetcodes solved by the end of this year. </p>
+                  <p> Outside of programming, I enjoy cooking, running, and playing chess. I hope to increase my chess elo and also run a marathon at the end of this year!  </p>
                   <p><strong>Personal</strong> <em>description</em></p>
+                  <p> My favorite foods are spaghetti, avocados, and steak. My favorite fast food restarurant is in n out and I love milkshakes.</p>
+                  <p> My favorite sport to watch is basketball and I also play on my free time.</p>
               </section>
               <nav>
                   <ul>
@@ -75,7 +87,7 @@
         <styled-box>
           <section id="education">
               <h2>Education</h2>
-              <p>List education</p>
+              <p>University of California, San Diego Sept. 2022 - June 2026</p>
           </section>
         </styled-box>
 
@@ -179,13 +191,16 @@
         </section>
         <section id="more-experiements">
           <h2>experiements continued</h2>
+          <search>
+            <input type="search" placeholder="search">
+          </search>
           <div>
               <span> span inside a div</span>
               <br>
               <b>bold</b>
               <i>italic</i>
               <picture>
-                  <source srcset="https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dpink%2Bheart&psig=AOvVaw0wyiMKQffXykUIA-IS0ypL&ust=1738642987563000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMCU8__TposDFQAAAAAdAAAAABAX" type="image/webp">
+                  <source srcset="assets/images/scenic.webp" type="image/webp">
                   <img src="assets/images/scenic.png" alt="scenic picture">
               </picture>
               <dl>
@@ -195,6 +210,22 @@
           </div>
           <hello-world></hello-world>
       </section>
+      <section id="mathml">
+        <h2>Einsteins equation</h2>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <msup>
+                <mi>E</mi>
+                <mrow></mrow>
+            </msup>
+            <mo>=</mo>
+            <mi>m</mi>
+            <mo>&#x2062;</mo>
+            <msup>
+                <mi>c</mi>
+                <mn>2</mn>
+            </msup>
+        </math>
+    </section>
     </main>
     
     <footer>
